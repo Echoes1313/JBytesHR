@@ -3,7 +3,7 @@
      *
      *
      */
-    obj.BytesToHumanReadable = function() {
+    obj.JBytesHR = function() {
         var decimalPlaces = 2;
 
         var kiloBytes = 1024, kiloBytesBase10 = 1000;
