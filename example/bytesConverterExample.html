@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script type="text/javascript" src="../JBytesHR.js"></script>
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      bytesTest = function() {
+        var bytes = $("#bytesInput").val();
+        var b2r = new JBytesHR();
+        var newVal = b2r.convert(bytes);
+        $("#convertedDiv").html(newVal);
+      }
+    </script>
+
+    <form>
+      <input type="text" id="bytesInput" />
+      <input type="button" value="convert" onclick="bytesTest();"/>
+    </form>
+    <div>
+      Result: <div id="convertedDiv"></div>
+    </div>
+  </body>
+</html>
